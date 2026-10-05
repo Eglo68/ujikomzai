@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../views/**/*.blade.php';
+
+/* Tema "Indigo Pop": gaya neo-brutalis, garis tebal + bayangan solid */
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #1b1b2f;
+  --color-ink-soft: #2c2c4a;
+  --color-brand: #4338ca;
+  --color-pop: #ffc94d;
+  --color-soft: #ece9ff;
+  --color-cream: #fff8ec;
+  --color-line: #d9d3c4;
+}
+@layer base { html{scroll-behavior:smooth} :focus-visible{outline:3px solid var(--color-brand);outline-offset:2px} }
